@@ -1,0 +1,32 @@
+%!TEX root = ../thesis.tex
+
+\chapter{Conclusiones y recomendaciones}
+\label{capitulo5}
+En la actualidad, la implantación de sistemas basados en \textit{blockchain}, a  excepción de aquellos proyectos financieros destinados a criptomonedas, es escasa. No obstante, existen organizaciones de diverso índole que pueden beneficiarse de las oportunidades que presenta esta tecnología. Seguridad, transparencia y confianza son características que pueden mejorar e incluso escalar distintos procesos dentro de organizaciones, empresas y academias.
+
+Durante la realización del presente trabajo, se abordaron conceptos principales tanto teóricos como prácticos que definen a la tecnología \textit{blockchain}, cuáles son sus beneficios y tipos de uso. Alejada de la visión financiera tradicional (criptomonedas), la intención del autor fue destacar la utilidad y beneficios de la cadena de bloques en otros sectores y rubros, tal como la implementación de una solución \textit{blockchain} orientada a soportar y mejorar procesos administrativos dentro de la Universidad Simón Bolívar.
+
+
+El modelo de red \textit{blockchain} desarrollado está inspirado en la funcionalidad de gestión de transcripciones del sistema \textit{SIGPAE}. Fue diseñado e implementado con fines exploratorios e ilustrativos, buscando exponer las diferentes características que la tecnología \textit{blockchain Hyperledger}  puede ser usada de manera total o parcial por un sistema interno de la Universidad Simón Bolívar. 
+
+A pesar de su breve trayectoria, la tecnología \textit{blockchain} ha demostrado ser efectiva cumpliendo con todas las características expuestas a lo largo de este trabajo. Por otro lado, la existencia de diversos proyectos de criptomonedas (implementaciones utilizadas en el mundo real) que en su gran mayoría han garantizado inmutabilidad, transparencia y confiabilidad, genera una razón de peso al momento de pensar en la tecnología \textit{blockchain} como posible solución tecnológica, o mejor aún como posible componente de una solución donde se integren otros tipos de tecnología tal como inteligencia artificial o internet de las cosas, sólo por nombrar algunas.
+
+Resulta de gran importancia recalcar que el modelo de red desarrollado puede ser perfectamente ampliado, refactorizado o simplemente servir de referencia para realizar un modelo más acorde y alineado con los requerimientos de los diferentes procesos del sistema \textit{SIGPAE}. 
+
+Durante el desarrollo del proyecto se realizo una implementación de una red local de prueba utilizando la plataforma Hyperledger Fabric, en una sola computadora que utilizando contenedores \textit{Docker}() logra levantar 2 nodos para dicha prueba. Sin embargo, dada la complejidad  de esta herramienta, no fue expuesta  en este proyecto con el objetivo de  respetar la extensión máxima requerida en proyectos de grado de la Universidad Simon Bolivar.
+
+Por tal motivo  se presentan una serie de consideraciones de importancia para estudios e investigaciones posteriores a fin de cumplir con la secuencia lógica y pretendiendo ser un valioso aporte para futuros trabajos de investigación.
+
+
+\begin{itemize}
+    \item En primer lugar, se sugiere la instalación de una red local o en su defecto su simulacion con ayuda de contenedores docker con el marco de trabajo \textit{Hyperledger Fabric}, para poder observar y verificar la integración del modelo red encontrado en el repositorio ~\cite{github:usb-library-network} con las funcionalidades principales de la tecnología \textit{blockchain}, nodos, mecanismos de consenso y criptografía.
+    
+    Se sugiere utilizar el modelo de red desarrollado en este proyecto, el cual se encuentra publico y disponible en el siguiente repositorio de github.
+    
+    Adicionalmente se aconseja la consulta del siguiente recurso que será de gran de utilidad para este fin:  \textit{Instalación y prueba de un red \textit{blockchain} en Fabric}~\cite{localFabric}.
+    
+    \item Seguidamente, se sugiere el despliegue de una red \text{Fabric} en un servidor propio o algún proveedor de servicios en la nube, con la finalidad de poder observar el comportamiento de la red \textit{blockchain} en un escenario real. En la documentación suministrada por IBM se encuentran recursos y guías que facilitan este objetivo: \textit{Despliegue de una red Fabric en una organización}~\cite{organizationFabric}
+    
+    \item Finalmente, se sugiere el uso de la herramienta de {\it testing} \textit{Cucumber}, para probar toda la lógica de transacciones y permisologías asociadas a la red implementada. Esta herramienta es recomendada por desarrolladores de \textit{IBM Hyperledeger}, lo que permite asegurar el cumplimiento de criterios de calidad sobre la plataforma \textit{blockchain} desarrollada~\cite{testingCucumber}.
+.
+\end{itemize}
